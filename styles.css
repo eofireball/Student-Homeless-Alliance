@@ -1,0 +1,198 @@
+body {
+    background-color: lightblue;
+    height: 100%;
+    margin: 0; /* Removes Default Browser Margin */
+}
+html {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    height: 100%;
+}
+/* Floats all Columns to the Left */
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: 1px solid black;
+}
+/* Prevents Columns from Being Taken out of the Flow of the Page */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* CSS for Navigation Bar */
+.navbar {
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: inset 0 3px rgba(255, 255, 255, 0.4), inset 0 10px 4px rgba(255, 255, 255, 0.3),inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(28,0,0,0.3);
+}
+ul {
+    list-style:none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #555;
+    overflow: hidden;
+}
+li {
+    float: left;
+}
+li a {
+    font-weight: bold;
+    display: inline-block;
+    color: black;
+    padding: 17px 15px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: orange;
+}
+.active {
+    background-color: #4CAF50;
+    color: white;
+}
+/* CSS for Footer */
+footer {
+    background-color: #999393;
+}
+p a:link {
+    text-decoration: none;
+    color: black;
+}
+p a:visited {
+    text-decoration: none;
+    color: black;
+}
+i {
+    padding-right: 10px;
+}
+/* Makes sure that Padding and Border are Included in the Total Width and Height of the Elements */
+* { box-sizing: border-box; }
+/* Divide Page Into 12 Equal Columns for Layout */
+.col-1 { width: 8.33%; }
+.col-2 { width: 16.66%; }
+.col-3 { width: 25%; }
+.col-4 { width: 33.33%; }
+.col-5 { width: 41.66%; }
+.col-6 { width: 50%; }
+.col-7 { width: 58.33%; }
+.col-8 { width: 66.66%; }
+.col-9 { width: 75%; }
+.col-10 { width: 83.33%; }
+.col-11 { width: 91.66%; }
+.col-12 { width: 100%; }
+.form1 {
+    width: 400px;
+}
+h3 {
+    text-align: center;
+}
+.social_media, .contact_info, .navigate {
+    text-align: center;
+}
+/* CSS for News Cards */
+#table1{
+    border-spacing: 35px;
+    margin: 0 auto;
+}
+.newscontainer{
+    min-height: 500px;
+    margin-bottom: 50px;
+    background: #282E34;
+}  
+.card{
+    padding: 10px;   
+    box-shadow: -3px 7px 14px -7px black;
+    height: 50%;
+    width: 20vw;
+    background: #808080; 
+    border-radius: 8%;
+}
+.card a{
+    text-decoration: none;
+}
+.card h3{
+    color: white;
+    text-align: justify;
+}
+.card a:hover p{
+    text-decoration: underline;
+    color: white;
+}
+.card p{
+    color: white;
+    text-align: justify;
+}
+.card th{  
+    text-decoration: none;  
+}
+/* The banner image */
+.banner-image {
+    /* Use "linear-gradient" to add a darken background effect to the image. This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/sha_campus_protest.png");
+  
+    /* Set a Specific Height */
+    height: 55%;
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+/* Place Text in the Middle of the Image */
+.banner-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+/* CSS for Statistics Text Font */
+.col-4.wow.fadeIn.stat {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #474747;
+}
+/* CSS for Donation Form */
+.donate-form.col-6 {
+    position: relative;
+    text-align: center;
+}
+.form-content {
+    padding: 10px;
+    margin: 5px;
+}
+.donate-form form {
+    border-radius: 8%;
+}
+.donate-form form label {
+    display: block;
+}
+.donate-form p {
+    margin: 0;
+}
+.donate-form .full {
+    grid-column: 1 / 3;
+}
+.donate-form input {
+    width: 40%;
+    padding: 1em;
+    border: 1px solid #c9e6ff;
+}
+.donate-form button {
+    background: #c9e6ff;
+    border: 0;
+    text-transform: uppercase;
+}
+.donate-form button:hover, .donate-form button:focus {
+    background: #92bde7;
+    color: #fff;
+    outline: 0;
+    transition: background-color 2s ease-out;
+}

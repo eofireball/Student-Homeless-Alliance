@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Donate</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Header Bar -->
+    <div class="navbar">
+        <ul>
+            <li>
+                <img src="images/sha_logo.jpg" style="max-height: 50px; margin-top: 1px"></a>
+            </li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a class="active" href="donate.html">Donate</a></li>
+        </ul>
+    </div>
+    <br>
+    <br>
+
+    <div class="row">
+        <div class="donate col-6">
+            <!-- Container for Give Hope section -->
+            <div class="row">
+                <div class="give-hope col-12" style="border:hidden">
+                    <h1>Give Hope</h1>
+                    <p>The Student Homeless Alliance is a non profit student organization.
+                    Our efforts are focused on brining awareness to the sad reality some students face.
+                    Our organization is solely dependent on volunteers and donations from the public. 
+                    </p>
+                    <p>Your donations will be used in several ways. Some of the funds will be use in
+                    our awareness campaign which consists of flyers, communitiy events and rallies. 
+                    Most of the funds will be used to provide short term housing for homeless students
+                    </p>
+                </div>                   
+            </div>
+            <!-- Container for Ways to Help section -->
+            <div class="row"> 
+                <div class="ways-to-help col-12" style="border:hidden">
+                    <h1>Ways to Help</h1>
+                    <p>There are many ways you can help students in need. As mentioned above our organization 
+                    is dependent on volunteers. You can make a difference by being part of community events 
+                    and awareness campaigns. These are held at different locations. All information can be found in our resources page. 
+                    </p>
+                    <p>Donations are another way to help this cause. Student Homeless Alliance does not received funding 
+                    from San Jose State University or any entity. Therefore, we rely on donations from the public and 
+                    concerned citizens. Your donation will directly benefit homeless students by providing them with 
+                    temporary shelter whenever possible.  
+                    </p>
+                    <p> If you would like to donate, to the right are several ways to do so. </p>            
+                </div>
+            </div>
+        </div>
+        <div class="donate col-6">
+            <div class="row">
+                <!-- Container for Donation Form -->
+                <div class="donate-form col-12" style="border: hidden">
+                    <h1 style="text-align: center">Donate Now</h1>
+                    <form id="donateForm" style="text-align: center">
+                        <p>
+                            <label>First Name</label>
+                            <input type="text" name="firstname" id="first" required>
+                        </p>
+                        <p>
+                            <label>Last Name</label>
+                            <input type="text" name="lastname" id="last" required>
+                        </p>
+                        <p>
+                            <label>Email Address</label>
+                            <input type="email" name="email" id="email" required>
+                        </p>
+                        <p>
+                            <label>Donation Amount</label>
+                            <input type="text" name="amount" id="amount" required>
+                        </p>
+                        <p>
+                            <label>Credit Card Number</label>
+                            <input type="text" name="ccnumber" id="ccnumber" required>
+                        </p>
+                        <!-- Code for Paypal plugin -->
+                        <p class="full">
+                            <input type="image" class="submit" id="submitBtn" value="Pay with Paypal"
+                            src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif">
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Footer Navigation Bar -->
+<footer>
+    <div class="row">
+        <div class="col-3 social_media">
+            <div style="display: inline-block; text-align: left">
+                <h4>Stay Connected</h4>
+                    <p><a href="https://twitter.com/sjsu_sha/media" target="_blank">
+                        <i class="fa fa-facebook fa-lg"></i>Twitter</a></p>
+                    <p><a href="https://www.facebook.com/shasjsu/" target="_blank">
+                        <i class="fa fa-twitter fa-lg"></i>Facebook</a></p>
+                    <p><a href="https://www.instagram.com/sjsu_sha" target="_blank">
+                        <i class="fa fa-instagram fa-lg"></i>Instagram</a></p>  
+            </div>
+        </div>            
+        <div class="col-6 contact_info">
+            <div style="display: inline-block; text-align: left">
+                <h4>Contact Us</h4>
+                <p>Student Services Center</p>
+                <p><a href=mailto:sjsucares@sjsu.edu>sjsucares@sjsu.edu</a></p>
+                <p>(408) 924-4211</p>
+            </div>
+        </div>
+        <div class="col-3 navigate">
+            <div style="display: inline-block; text-align: left">
+                <h4>Navigate</h4>
+                <p><a href="home.html">Home</a></p>
+                <p><a href="resources.html">Resources</a></p>
+                <p><a href="about.html">About Us</a></p>
+                <p><a href="donate.html">Donate</a></p>
+            </div>
+        </div>
+    </div>
+</footer> 
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script src="donate.js"></script>
+</body>
+</html>         
